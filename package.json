@@ -1,0 +1,16 @@
+{
+  "name": "taqc-playwright-ts-basics",
+  "version": "1.0.0",
+  "description": "TypeScript Basics for Playwright — homework topic 01",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "typecheck:types-test": "tsc --noEmit -p tsconfig.types-test.json",
+    "test:unit": "vitest run",
+    "test": "npm run test:unit && npm run typecheck && npm run typecheck:types-test"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^2.1.0"
+  }
+}
