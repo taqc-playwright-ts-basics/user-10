@@ -18,22 +18,22 @@
  */
 
 // TODO: додай явну анотацію типу / add an explicit type annotation
-export let testCaseTitle = "Login with valid credentials";
+export let testCaseTitle: string = "Login with valid credentials";
 
 // TODO: додай явну анотацію типу / add an explicit type annotation
-export let retryCount = 3;
+export let retryCount: number = 3;
 
 // TODO: додай явну анотацію типу / add an explicit type annotation
-export let isAutomated = true;
+export let isAutomated: boolean = true;
 
 // Навмисна помилка / Intentional error:
-export let timeoutMs: number = "5000";
+export let timeoutMs: number = 5000;
 
 // Навмисна помилка / Intentional error:
-export let browserName: string = 404;
+export let browserName: number = 404;
 
 // Навмисна помилка / Intentional error:
-export let isSkipped: boolean = "false";
+export let isSkipped: string = "false";
 
 export const tags = ["smoke", "regression"];
 export const maxUsers = 50;
