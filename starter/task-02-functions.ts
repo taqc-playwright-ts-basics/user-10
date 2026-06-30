@@ -33,7 +33,7 @@
  */
 
 // TODO: додай типи параметрів і тип повернення / add parameter types and return type
-export function formatTestName(name:string, suite:string) {
+export function formatTestName(name:string, suite:string): string{
   return `[${suite}] ${name}`;
 }
 
