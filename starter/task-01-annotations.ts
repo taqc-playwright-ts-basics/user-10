@@ -30,10 +30,10 @@ export let isAutomated: boolean = true;
 export let timeoutMs: number = 5000;
 
 // Навмисна помилка / Intentional error:
-export let browserName: number = 404;
+export let browserName: string = "chromium";
 
 // Навмисна помилка / Intentional error:
-export let isSkipped: string = "false";
+export let isSkipped: boolean = false;
 
 export const tags = ["smoke", "regression"];
 export const maxUsers = 50;
