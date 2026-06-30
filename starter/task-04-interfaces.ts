@@ -33,7 +33,7 @@ export interface TestCase {
     name: string;
     status: "passed" | "failed" | "skipped";
     owner?: string;
-    tags?: string[];
+    tags: string[];
   }
 
 // TODO: firstCase (без owner / without owner) — export const firstCase: TestCase = ...
