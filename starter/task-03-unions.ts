@@ -44,7 +44,7 @@ export function describeValue(value: string | number): string {
    if (typeof value === "number") {
     return `Number: ${value}`;
   }
-  return `String: ${value}`;;
+  return `String: ${value}`;
 }
 
 export {};
