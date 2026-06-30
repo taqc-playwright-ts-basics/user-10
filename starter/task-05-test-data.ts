@@ -33,15 +33,19 @@ import { TestCase } from "./task-04-interfaces";
 
 // TODO: додай тип / add a type
 export const testCases: TestCase[] = [
-  { id: 1, name: "Login with valid credentials", status: "passed" },
-  { id: 2, name: "Login with invalid password", status: "failed" },
-  { id: 3, name: "Logout from dashboard", status: "passed" },
-  { id: 4, name: "Reset password flow", status: "skipped" },
+  { id: 1, name: "Login with valid credentials", status: "passed", tags: ["auth"] },
+  { id: 2, name: "Login with invalid password", status: "failed", tags: ["auth"] },
+  { id: 3, name: "Logout from dashboard", status: "passed", tags: ["smoke"] },
+  { id: 4, name: "Reset password flow", status: "skipped", tags: ["regression"] },
 ];
 
-export function countByStatus(cases: TestCase[], status:"passed"|"failed"|"skipped") {
+  
+export function countByStatus(
   // TODO: реалізуй / implement
+  cases: TestCase[],
+  status: "passed" | "failed" | "skipped"
+): number {
   return cases.filter(c => c.status === status).length;
 }
-
 export {};
+
